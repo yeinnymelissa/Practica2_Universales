@@ -21,7 +21,7 @@ public class JwtTokenImple implements JwtTokenInterface{
 	public Map<String, String> generateToken(Person person) {
 		final Date createdDate = new Date();
 		final Date expirationDate = new Date(createdDate.getTime() + 60000);
-		
+
 		String jwtToken="";
 	    jwtToken = Jwts.builder()
 	    		.setSubject(person.getUsername())

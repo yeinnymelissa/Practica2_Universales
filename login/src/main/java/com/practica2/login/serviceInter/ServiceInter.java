@@ -23,4 +23,7 @@ public interface ServiceInter {
 	
 	@GetMapping("/findPeople")
 	public List<Person> findPeople();
+	
+	@GetMapping("/auth/hola")
+	public String helloWorldAuth();
 }

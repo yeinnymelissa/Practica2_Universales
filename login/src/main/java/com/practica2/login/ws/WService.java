@@ -41,4 +41,10 @@ public class WService implements ServiceInter{
 		return pr.findAll();
 	}
 
+	@Override
+	public String helloWorldAuth() {
+		return "holaMundo";
+		
+	}
+
 }
