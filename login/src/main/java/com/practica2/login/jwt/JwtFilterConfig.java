@@ -11,7 +11,7 @@ public class JwtFilterConfig {
         FilterRegistrationBean<JwtFilter>  filter= new FilterRegistrationBean<JwtFilter>();
         filter.setFilter(new JwtFilter());
         
-       filter.addUrlPatterns("/api/auth/hola");
-    return filter;
+       filter.addUrlPatterns("/api/auth/hola");   
+       return filter;
     }
 }
