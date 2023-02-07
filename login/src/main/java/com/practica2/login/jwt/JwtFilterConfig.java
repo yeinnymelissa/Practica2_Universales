@@ -7,11 +7,11 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class JwtFilterConfig {
 	@Bean
-    public FilterRegistrationBean<JwtFilter> jwtFilter() {
+    FilterRegistrationBean<JwtFilter> jwtFilter() {
         FilterRegistrationBean<JwtFilter>  filter= new FilterRegistrationBean<JwtFilter>();
         filter.setFilter(new JwtFilter());
         
-       filter.addUrlPatterns("/api/auth/hola");   
+       filter.addUrlPatterns("/api/auth/*");   
        return filter;
     }
 }
